@@ -35,12 +35,9 @@
 Playwright 持久化**用户数据目录**（含登录态）统一从项目根目录的 [用户数据路径.txt](用户数据路径.txt) 读取：
 
 ```
-/home/user/桌面/playwright-userdata/
+/home/user/桌面/playwright-userdata/    #示例
 ```
-
-- 两个启动项共用此配置（由 [Config.cs](Config.cs) 的 `Config.GetUserDataDir()` 读取，取第一行、去除首尾空白）。
 - 修改该文件即可切换用户数据目录（若路径下没有内容则会在第一次创建用户数据）；文件缺失或为空时会抛出明确异常。
-- 路径按**当前工作目录**解析，请在项目目录下运行。
 
 ## 两个启动项
 
