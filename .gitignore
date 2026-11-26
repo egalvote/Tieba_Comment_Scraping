@@ -1,0 +1,22 @@
+# .NET build artifacts
+bin/
+obj/
+*.user
+
+# .NET / IDE
+.vs/
+.idea/
+*.DotSettings.user
+.vsconfig
+.directory
+
+# Playwright 浏览器缓存（本地生成，不入库）
+# Playwright 用户数据目录由 用户数据路径.txt 指向，默认在项目外
+
+# 日志
+log/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
