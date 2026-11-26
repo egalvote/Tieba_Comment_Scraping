@@ -2,6 +2,8 @@
 
 基于 [.NET 10](https://dotnet.microsoft.com) + [Playwright](https://playwright.dev) 的贴吧帖子**评论内容**抓取工具。复用 Playwright 持久化用户目录（已登录态），通过拦截贴吧 `/c/f/pb/page_pc` 接口 JSON 抓取指定帖子的最新回帖（倒序），并对外提供 Web API。
 
+适用于多平台（Windows/Linux）
+
 ---
 
 ## 爬取内容说明
@@ -26,7 +28,8 @@
 | `time` | 发布时间（`yyyy-MM-dd HH:mm`，本地时区） |
 
 ---
-
+## 必要依赖
+- Edge浏览器
 ## 路径配置
 
 Playwright 持久化**用户数据目录**（含登录态）统一从项目根目录的 [用户数据路径.txt](用户数据路径.txt) 读取：
